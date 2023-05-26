@@ -1,6 +1,8 @@
 import torch
 from neural_networks.layers import AttentionLayer, NeuralTensorLayer, GCNNBlock
 from torch.distributions import Categorical
+import random
+import math
 
 class LowNetwork(torch.nn.Module):
     def __init__(self, args) -> None:
@@ -8,6 +10,7 @@ class LowNetwork(torch.nn.Module):
         self.args = args
         self.setup_layers()
         self.clear_memory()
+        self.steps_done = 0
     
     #########################
     def clear_memory(self):
@@ -24,10 +27,18 @@ class LowNetwork(torch.nn.Module):
     def select_action(self, obs, train=True):
         pi, _ = self.forward(obs)
         if train:
-            dist = Categorical(pi)
-            action = dist.sample().numpy()[0]
+            sample = random.random()
+            eps_threshold = self.args['eps_end'] + (self.args['eps_start'] - self.args['eps_end']) * \
+            math.exp(-1. * self.steps_done / self.args['eps_decay'])
+            self.steps_done += 1
+            if sample > eps_threshold:
+                action = action = pi.argmax().item()
+            else:
+                action = random.randint(0, self.args['n_sub_nodes']-1)
+            # dist = Categorical(pi)
+            # action = dist.sample().numpy()[0]
         else:
-            action = pi.argmax().item()
+            action = action = pi.argmax().item()
         return action
     
     def calc_R(self, done):
