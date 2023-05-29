@@ -31,7 +31,7 @@ x_arr = [0.04, 0.08, 0.12, 0.16, 0.2]
 x_dep_t = [500, 600, 700, 800, 900]
 x_vnr_size = [4, 6, 8, 10, 12]
 algos = ['a3c', 'dqn', 'greedy', 'heuristic']
-colors = ['b', 'r', 'g', 'm']
+colors = ['b', 'r', 'g', 'c']
 markers = ['+', 'D', 'h', 'x']
 
 values = [x_arr, x_dep_t, x_vnr_size]
@@ -44,9 +44,21 @@ for x in range(len(x_fields)):
         plt.ylabel('average_node_util')
         x_labels = [i+1 for i in range(len(utils[0][0]))]
         for z in range(len(utils)):
-            plt.plot(x_labels[:len(utils[z][g])], utils[z][g], label=algos[z], color=colors[z])
-        plt.legend()
+            l = 1
+            avg = 0
+            avgs = []
+            for k in utils[z][g]:
+                avg += k
+                if l == 10:
+                    avgs.append(avg / l)
+                    l = 1
+                    avg = 0
+                l += 1
+            # plt.plot(x_labels[:len(utils[z][g])], utils[z][g], label=algos[z], color=colors[z])
+            plt.plot(x_labels[:len(avgs)], avgs, label=algos[z], color=colors[z])
         name = str(x_fields[x]) + '_' + str(values[x][y])
+        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+        plt.tight_layout()
         plt.savefig('results/utilizations/' + name + '_.png')
         plt.clf()
         g += 1

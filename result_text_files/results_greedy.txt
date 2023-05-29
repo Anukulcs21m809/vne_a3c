@@ -3,133 +3,133 @@ algo:greedy
 0.04
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.986013986013986
-rev_cost:0.7262243468774023
-cum_rev:82983.22077922078
+accept_ratio:0.8208208208208209
+rev_cost:0.6943796196257995
+cum_rev:187768.0
 
 test:arr_rate
 algo:greedy
 0.08
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.9440559440559441
-rev_cost:0.704539731580331
-cum_rev:79949.83216783217
+accept_ratio:0.5735735735735735
+rev_cost:0.7060108607432541
+cum_rev:125342.0
 
 test:arr_rate
 algo:greedy
 0.12
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.9100899100899101
-rev_cost:0.6969612177018165
-cum_rev:74368.75524475524
+accept_ratio:0.5125125125125125
+rev_cost:0.7105011819391983
+cum_rev:110352.0
 
 test:arr_rate
 algo:greedy
 0.16
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.8731268731268731
-rev_cost:0.7014775448203721
-cum_rev:71417.76223776223
+accept_ratio:0.4214214214214214
+rev_cost:0.6805629066233777
+cum_rev:91014.0
 
 test:arr_rate
 algo:greedy
 0.2
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.7802197802197802
-rev_cost:0.7080040850531056
-cum_rev:61926.41958041958
+accept_ratio:0.38738738738738737
+rev_cost:0.7107299021585266
+cum_rev:82872.0
 
 test:dept_time
 algo:greedy
 0.04
 500
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.986013986013986
-rev_cost:0.7296038367365747
-cum_rev:80957.78421578421
+accept_ratio:0.8288288288288288
+rev_cost:0.700132791474059
+cum_rev:194850.0
 
 test:dept_time
 algo:greedy
 0.04
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.987012987012987
-rev_cost:0.7249465795835405
-cum_rev:81803.65234765234
+accept_ratio:0.7367367367367368
+rev_cost:0.73129452640497
+cum_rev:173986.0
 
 test:dept_time
 algo:greedy
 0.04
 700
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.9920079920079921
-rev_cost:0.7269491366808816
-cum_rev:82637.87212787214
+accept_ratio:0.7677677677677678
+rev_cost:0.7138536475195355
+cum_rev:179130.0
 
 test:dept_time
 algo:greedy
 0.04
 800
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.967032967032967
-rev_cost:0.7299222825599501
-cum_rev:82160.9010989011
+accept_ratio:0.7707707707707707
+rev_cost:0.708278378806495
+cum_rev:177952.0
 
 test:dept_time
 algo:greedy
 0.04
 900
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.981018981018981
-rev_cost:0.7241675274980696
-cum_rev:81593.24475524476
+accept_ratio:0.6966966966966966
+rev_cost:0.7299895506792059
+cum_rev:160796.0
 
 test:vnr_size
 algo:greedy
 0.04
 600
 [[3, 6], [2, 4], [2, 4, 8], [32, 48]]
-accept_ratio:0.9820179820179821
-rev_cost:0.7201847092596468
-cum_rev:86092.71728271728
+accept_ratio:0.7927927927927928
+rev_cost:0.6905931064003794
+cum_rev:187052.0
 
 test:vnr_size
 algo:greedy
 0.04
 600
 [[3, 6], [4, 6], [4, 6, 10], [36, 52]]
-accept_ratio:0.991008991008991
-rev_cost:0.7197213681507652
-cum_rev:93539.46053946055
+accept_ratio:0.7877877877877878
+rev_cost:0.7127686156921541
+cum_rev:208806.0
 
 test:vnr_size
 algo:greedy
 0.04
 600
 [[3, 6], [6, 8], [6, 8, 12], [40, 56]]
-accept_ratio:0.989010989010989
-rev_cost:0.7117090215930608
-cum_rev:104125.23676323677
+accept_ratio:0.8308308308308309
+rev_cost:0.7261394504288966
+cum_rev:242456.0
 
 test:vnr_size
 algo:greedy
 0.04
 600
 [[3, 6], [8, 10], [8, 10, 14], [44, 60]]
-accept_ratio:0.996003996003996
-rev_cost:0.7166886954443596
-cum_rev:111450.34965034966
+accept_ratio:0.7407407407407407
+rev_cost:0.7036235066085812
+cum_rev:231776.0
 
 test:vnr_size
 algo:greedy
 0.04
 600
 [[3, 6], [10, 12], [10, 12, 16], [48, 64]]
-accept_ratio:0.9630369630369631
-rev_cost:0.7200991228196424
-cum_rev:118215.45054945054
+accept_ratio:0.6806806806806807
+rev_cost:0.7314587737780113
+cum_rev:226878.0
 

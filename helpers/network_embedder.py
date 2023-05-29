@@ -206,6 +206,12 @@ class VNE_on_sub:
             utils.append(util)
         return np.mean(utils)
 
+    def return_available_node_resources(self):
+        res = 0
+        for node in self.curr_state['nodes']:
+            res += node['cpu']
+        return res
+
 # from graph_gen import GraphGen
 # from time_sim import Time_Sim
 # import random

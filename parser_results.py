@@ -46,7 +46,7 @@ x_dep_t = [500, 600, 700, 800, 900]
 x_vnr_size = [4, 6, 8, 10, 12]
 
 x_vals = [x_arr, x_dep_t, x_vnr_size]
-x_fields = ['arrival_rate', 'max_departure_time', 'max_vnr_resource_requirements']
+x_fields = ['arrival_rate', 'max_departure_time', 'max_vnr_cpu_cores_requirement']
 y_fields = ['acceptance_rate', 'revenue_to_cost_ratio', 'cumulative_revenue']
 titles = ['arrival_rate_change', 'departure_time_change', 'vnr_resource_requirement_change']
 algos = ['a3c', 'dqn', 'greedy', 'heuristic']
@@ -63,7 +63,8 @@ for evaluations in all_values.values():
         plt.ylabel(y_fields[j])
         for algo_index in range(len(metric)):
             plt.plot(x_vals[i], metric[algo_index], label=algos[algo_index], marker=markers[algo_index], color=colors[algo_index])
-        plt.legend()
+        plt.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+        plt.tight_layout()
         name = str(x_fields[i]) + '_' + str(y_fields[j])
         plt.savefig('results/acc_rate_rev_cost_rew/' + name + '_.png')
         plt.clf()
