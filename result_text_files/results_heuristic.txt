@@ -1,0 +1,135 @@
+test:arr_rate
+algo:heuristic
+0.04
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.6846846846846847
+rev_cost:0.74035899962366
+cum_rev:160774.0
+
+test:arr_rate
+algo:heuristic
+0.08
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.5025025025025025
+rev_cost:0.7349596607469072
+cum_rev:114700.0
+
+test:arr_rate
+algo:heuristic
+0.12
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.3963963963963964
+rev_cost:0.7455755189790624
+cum_rev:82770.0
+
+test:arr_rate
+algo:heuristic
+0.16
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.34134134134134136
+rev_cost:0.7216263978568337
+cum_rev:69240.0
+
+test:arr_rate
+algo:heuristic
+0.2
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.2882882882882883
+rev_cost:0.7149190499168038
+cum_rev:57400.0
+
+test:dept_time
+algo:heuristic
+0.04
+500
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.7167167167167167
+rev_cost:0.7154113388492761
+cum_rev:168280.0
+
+test:dept_time
+algo:heuristic
+0.04
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.6976976976976977
+rev_cost:0.7109749999959213
+cum_rev:162952.0
+
+test:dept_time
+algo:heuristic
+0.04
+700
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.6606606606606606
+rev_cost:0.728161529981687
+cum_rev:153156.0
+
+test:dept_time
+algo:heuristic
+0.04
+800
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.6506506506506506
+rev_cost:0.7388548506102514
+cum_rev:148276.0
+
+test:dept_time
+algo:heuristic
+0.04
+900
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.5935935935935935
+rev_cost:0.7243769876963156
+cum_rev:138112.0
+
+test:vnr_size
+algo:heuristic
+0.04
+600
+[[3, 6], [2, 4], [2, 4, 8], [32, 48]]
+accept_ratio:0.6896896896896897
+rev_cost:0.7253447556370309
+cum_rev:158300.0
+
+test:vnr_size
+algo:heuristic
+0.04
+600
+[[3, 6], [4, 6], [4, 6, 10], [36, 52]]
+accept_ratio:0.5215215215215215
+rev_cost:0.7179514238096344
+cum_rev:128106.0
+
+test:vnr_size
+algo:heuristic
+0.04
+600
+[[3, 6], [6, 8], [6, 8, 12], [40, 56]]
+accept_ratio:0.3993993993993994
+rev_cost:0.7333380703271213
+cum_rev:107902.0
+
+test:vnr_size
+algo:heuristic
+0.04
+600
+[[3, 6], [8, 10], [8, 10, 14], [44, 60]]
+accept_ratio:0.3013013013013013
+rev_cost:0.7104710118194518
+cum_rev:88770.0
+
+test:vnr_size
+algo:heuristic
+0.04
+600
+[[3, 6], [10, 12], [10, 12, 16], [48, 64]]
+accept_ratio:0.24924924924924924
+rev_cost:0.7246298825831007
+cum_rev:75622.0
+
