@@ -19,7 +19,7 @@ class GraphGen:
         ]
         self.vnr_values = [
             [3, 6],
-            [1,2,3],
+            [2,4],
             [2,4,8],
             [32, 48]
         ]if vnr_values is None else vnr_values

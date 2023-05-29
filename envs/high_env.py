@@ -19,7 +19,7 @@ class HighLevelEnv:
         self.gr_gen = gr_gen
         self.curr_vnr = self.gr_gen.gen_rnd_vnr()
         self.max_vnr_generated = max_vnr_generated
-        self.reward_scaling = 10
+        self.reward_scaling = 1
         self.revenues = [0,0,0]
         self.costs = [0,0,0]
         self.cum_rev = 0
@@ -123,7 +123,13 @@ class HighLevelEnv:
         return next_state, reward, done, fully_embedded
 
     def rev_cost_ratio(self):
-        tot_rev_ratio = np.mean([0 if c == 0 else r / c for r, c in zip(self.revenues, self.costs)])
+        tot_rev_ratio = 0
+        rev_costs = []
+        for r ,c in zip(self.revenues, self.costs):
+            rev_cost = r / c if c != 0 else 0
+            if rev_cost != 0:
+                rev_costs.append(rev_cost)
+        tot_rev_ratio = np.mean(rev_costs)
         return tot_rev_ratio, self.cum_rev
     
     

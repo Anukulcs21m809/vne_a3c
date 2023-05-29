@@ -2,6 +2,7 @@ import copy
 from networkx.readwrite import json_graph
 from networkx.algorithms import shortest_paths
 import sys
+import numpy as np
 
 
 # this class will be used separately by all the substrate graphs to embed the VNRs
@@ -197,7 +198,13 @@ class VNE_on_sub:
             cost += (mapp['bw'][u] * (len(mapp['paths'][u]) - 1))
         
         return revenue, cost
-        
+
+    def return_avg_util(self):
+        utils = []
+        for node in self.curr_state['nodes']:
+            util = 1 - (node['cpu'] / node['cpu_max'])
+            utils.append(util)
+        return np.mean(utils)
 
 # from graph_gen import GraphGen
 # from time_sim import Time_Sim

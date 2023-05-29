@@ -39,7 +39,11 @@ class HighNetwork(torch.nn.Module):
             # dist = Categorical(pi)
             # action = dist.sample().numpy()[0]
         else:
-            action = action = pi.argmax().item()
+            sample = random.random()
+            if sample < 0.01:
+                action = random.randint(0, self.args['n_subs']-1)
+            else:
+                action = action = pi.argmax().item()
         return action
 
     def calc_R(self, done):
